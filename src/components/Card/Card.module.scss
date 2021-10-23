@@ -1,0 +1,80 @@
+.Card {
+  width: 360px;
+  margin: 10px;
+  border: 1px solid #00000099;
+  border-radius: 5px;
+  box-shadow: 0 10px 6px -6px #777;
+
+  &Header {
+    display: flex;
+    align-items: center;
+  }
+
+  &Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff6347ff;
+    font-size: 18px;
+    font-family: Arial;
+    color: #ffffff;
+  }
+
+  &Image {
+    padding: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &Main {
+    padding: 10px;
+
+    p {
+      color: #00000099;
+    }
+  }
+
+  &MoreSection {
+    height: 0px;
+    padding: 10px;
+    color:  #00000099;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: 0.3s;
+
+    &Outspread {
+      height: 387px;
+      transform: scale(1, 1);
+    }
+  }
+
+  &Footer {
+    position: relative;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    font-size: 20px;
+    color:  #00000099;
+  }
+}
+
+.FontAwesomeIcon {
+  margin: 0px 10px;
+  transform: rotate(0deg);
+  transition: 0.4s;
+
+  &:last-child {
+    position: absolute;
+    right: 10px;
+  }
+
+  &Rotated {
+    transform: rotate(180deg);
+  }
+}
